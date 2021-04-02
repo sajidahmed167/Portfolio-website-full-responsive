@@ -100,10 +100,8 @@ h1::after {
 }
 
 .btn1 {
-  width: 400px;
   color: white;
   background-color: #333333;
-  height: 35px;
   border: none;
   font-size: 18px;
 }
@@ -209,6 +207,29 @@ h1::after {
 }
 
 @media screen and (max-width: 850px) {
+  #main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-nav li {
+    padding: 1rem;
+  }
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #FFBC00;
+    background-position: 20% 30%;
+  }
+  #header-home .header-content {
+    display: none;
+  }
+  #header-inner {
+    height: 10rem;
+  }
   .specialty-content {
     display: -ms-grid;
     display: grid;
@@ -217,18 +238,6 @@ h1::after {
   }
   .footerp {
     font-size: 14px;
-  }
-  #main-nav {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: 1fr;
-            flex-direction: 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 1rem;
   }
   .box {
     float: none;
@@ -266,6 +275,18 @@ h1::after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-height: 330px) {
+  #header-home .header-content h1 {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
