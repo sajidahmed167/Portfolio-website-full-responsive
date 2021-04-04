@@ -8,12 +8,19 @@
 }
 
 #main-nav ul {
-    display: flex; 
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
     
 #main-nav li {
     padding: 1rem 1.5rem; 
 }
+
+input, textarea:focus{
+    outline-color: $color-yellow;
+}
+
 
 
 textarea{
@@ -48,7 +55,7 @@ textarea{
 }
       
 #main-nav a.current {
-    border-color: #ffbc00; 
+    border-color: $color-yellow; 
     
 }
 
@@ -77,8 +84,8 @@ body{
 
 h1::after {
     content: "";
-    width: 50px;
-    height: 2px;
+    width: 60px;
+    height: 4px;
     display: block;
     margin-top: 50px;
     background-color: $color-yellow;
@@ -112,7 +119,7 @@ h1::after {
 
 .btn1:hover, .btn2:hover {
     transition: all 0.5s;
-    color: $color-black;
+    color: white;
     background-color: $color-yellow;
 }
 
@@ -140,7 +147,7 @@ h1::after {
 }
 
 .bg-yellow-c-black{
-    color: black;
+    color: white;
     background-color: $color-yellow;
 }
 
@@ -211,6 +218,8 @@ h1::after {
     max-width: 850px;
     width: 100%;
 }
+
+
 
 .item 
 {
@@ -366,7 +375,10 @@ h1::after {
 
 @media (max-height: 580px) {
     #header-home .header-content {
-      padding-top: 3rem; } }
+      padding-top: 3rem; }
+
+    }
+
   
   @media (max-height: 320px) {
     #header-home .header-content h2{
