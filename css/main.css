@@ -240,6 +240,11 @@ h1::after {
   width: 100%;
 }
 
+.ula {
+  margin: 0;
+  padding: 0;
+}
+
 .item {
   position: relative;
   background: #C70039;
