@@ -320,6 +320,51 @@ h1::after {
           transform: translateY(-50%);
 }
 
+.Grid-gap {
+  grid-column-gap: 60px;
+}
+
+.process-icon {
+  border-radius: 50%;
+  background: #333333;
+  color: white;
+  padding: 2rem;
+  width: 130px;
+  height: 130px;
+  line-height: 70px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.process-icon:hover {
+  background-color: #C70039;
+  color: white;
+  width: 160px;
+  height: 160px;
+  line-height: 90px;
+}
+
+.process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  background: #C70039;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  padding: 1rem;
+  line-height: 15px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.process-icon:hover .process-step {
+  background-color: #333333;
+}
+
 @media screen and (max-width: 850px) {
   #main-nav {
     -webkit-box-orient: vertical;
@@ -398,6 +443,9 @@ h1::after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .Grid-gap {
+    grid-row-gap: 40px;
   }
 }
 
