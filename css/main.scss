@@ -187,6 +187,12 @@ h1::after {
     color: $color-yellow;
 }
 
+
+.bg-color-black{
+    background-color: $color-black;
+    color: white;
+}
+
 .social:hover{
     color: white;
     background-color: $color-yellow;
@@ -205,6 +211,16 @@ h1::after {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
+}
+
+
+
+.Grid-gap{
+    grid-column-gap: 60px;
+}
+
+.Grid-gap2{
+    grid-column-gap: 10px;
 }
 
 .grid-work{
@@ -302,13 +318,11 @@ h1::after {
 }
 
 
-.Grid-gap{
-    grid-column-gap: 60px;
-}
+
 
 .process-icon {
       border-radius: 50%;
-      background: $color-black;
+      background: black;
       color: white;
       padding: 2rem;
       width: 130px;
@@ -321,7 +335,7 @@ h1::after {
 
 .process-icon:hover {
         background-color: $color-yellow;
-        color: white;
+        color: black;
         width: 160px;
         height: 160px;
         line-height: 90px; 
@@ -333,6 +347,7 @@ h1::after {
     top: 0;
     right: 0;
     font-size: 28px;
+    color: black;
     background: $color-yellow;
     border-radius: 50%;
     height: 45px;
@@ -343,9 +358,44 @@ h1::after {
 }
 
 .process-icon:hover .process-step {
-  background-color: $color-black; 
+  background-color: black; 
+  color: white;
 }
-  
+
+// about page
+
+.testimonialsp {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.testimonialimg{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.skill-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.section3{
+    background-color: $color-light-grey;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    
+  }
 
 
 @media screen and (max-width: 850px) {
@@ -374,6 +424,11 @@ h1::after {
 
 
     .specialty-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    .skill-content{
         display: grid;
         grid-template-columns: 1fr;
     
@@ -419,6 +474,21 @@ h1::after {
         grid-row-gap: 40px;
     }
  
+    .Grid-gap2{
+        grid-row-gap: 20px;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        
+      }
+    
 
 }
 

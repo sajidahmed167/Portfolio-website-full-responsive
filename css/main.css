@@ -190,6 +190,11 @@ h1::after {
   color: #C70039;
 }
 
+.bg-color-black {
+  background-color: #333333;
+  color: white;
+}
+
 .social:hover {
   color: white;
   background-color: #C70039;
@@ -210,6 +215,14 @@ h1::after {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Grid-gap {
+  grid-column-gap: 60px;
+}
+
+.Grid-gap2 {
+  grid-column-gap: 10px;
 }
 
 .grid-work {
@@ -320,13 +333,9 @@ h1::after {
           transform: translateY(-50%);
 }
 
-.Grid-gap {
-  grid-column-gap: 60px;
-}
-
 .process-icon {
   border-radius: 50%;
-  background: #333333;
+  background: black;
   color: white;
   padding: 2rem;
   width: 130px;
@@ -340,7 +349,7 @@ h1::after {
 
 .process-icon:hover {
   background-color: #C70039;
-  color: white;
+  color: black;
   width: 160px;
   height: 160px;
   line-height: 90px;
@@ -351,6 +360,7 @@ h1::after {
   top: 0;
   right: 0;
   font-size: 28px;
+  color: black;
   background: #C70039;
   border-radius: 50%;
   height: 45px;
@@ -362,7 +372,44 @@ h1::after {
 }
 
 .process-icon:hover .process-step {
-  background-color: #333333;
+  background-color: black;
+  color: white;
+}
+
+.testimonialsp {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.testimonialimg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.skill-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section3 {
+  background-color: #F4F4F4;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  padding: 50px;
 }
 
 @media screen and (max-width: 850px) {
@@ -399,6 +446,12 @@ h1::after {
             justify-content: center;
   }
   .specialty-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .skill-content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -446,6 +499,18 @@ h1::after {
   }
   .Grid-gap {
     grid-row-gap: 40px;
+  }
+  .Grid-gap2 {
+    grid-row-gap: 20px;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
   }
 }
 
